@@ -1,5 +1,5 @@
 applications:
-- name: StudentTimeTable-node
+- name: storelive
   buildpack: sdk-for-nodejs
   stack: cflinuxfs3
   instances: 1
