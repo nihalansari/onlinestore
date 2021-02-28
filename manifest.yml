@@ -1,0 +1,8 @@
+applications:
+- name: StudentTimeTable-node
+  buildpack: sdk-for-nodejs
+  stack: cflinuxfs3
+  instances: 1
+  memory: 128M
+  disk_quota: 128M
+  

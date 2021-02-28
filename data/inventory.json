@@ -1,0 +1,47 @@
+[
+{
+  "_id": {
+    "$oid": "5a54ee9cc5592eb22a4d1cbc"
+  },
+  "product_id": "18348293",
+  "product_details": []
+},
+
+{
+  "_id": {
+    "$oid": "5a54ee9dc5592eb22a4d1cc8"
+  },
+  "productid": "18362887",
+  "productdetails": {
+    "description": "Kellogs Corn Flakes",
+    "otherdesc": "Breakfast Cereal",
+    "unitofmeasure": "grams",
+    "measurement": "500",
+    "price": "5.75",
+    "instock": true,
+    "discount": false,
+    "storesinventory": [
+      {
+        "storeid": "syd0001",
+        "suburb": "Paramatta",
+        "countavailable": 20
+      },
+      {
+        "storeid": "syd0002",
+        "suburb": "Bankstown",
+        "countavailable": 10
+      },
+      {
+        "storeid": "syd0003",
+        "suburb": "Manly",
+        "countavailable": 5
+      },
+      {
+        "storeid": "syd0004",
+        "suburb": "Surrey Hills",
+        "countavailable": 22
+      }
+    ]
+  }
+}
+]

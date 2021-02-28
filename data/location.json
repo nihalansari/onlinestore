@@ -1,0 +1,38 @@
+[
+    {
+      "_id": {
+        "$oid": "5a54ee9cc5592eb22a4d1cbc"
+      },
+      "storeid": "18348293",
+      "suburb": "Bankstown",
+      "gps_coordinates": "-33.875641,151.209343",
+      "active": true 
+    },
+    {
+        "_id": {
+          "$oid": "5a54ee9cc5592eb22a4d1cbc"
+        },
+        "storeid": "18348293",
+        "suburb": "Manly",
+        "gps_coordinates": "-33.875641,151.209343",
+        "active": true 
+      },
+      {
+        "_id": {
+          "$oid": "5a54ee9cc5592eb22a4d1cbc"
+        },
+        "storeid": "18348293",
+        "suburb": "Surrey Hills",
+        "gps_coordinates": "-33.875641,151.209343",
+        "active": true 
+      },
+      {
+        "_id": {
+          "$oid": "5a54ee9cc5592eb22a4d1cbc"
+        },
+        "storeid": "18348293",
+        "suburb": "Paramatta",
+        "gps_coordinates": "-33.875641,151.209343",
+        "active": true 
+      }
+]    

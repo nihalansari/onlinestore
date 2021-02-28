@@ -1,0 +1,27 @@
+{
+  "name": "studenttimetable",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "clean": "^4.0.2",
+    "cookie-parser": "~1.4.4",
+    "cors": "",
+    "cuid": "",
+    "debug": "~2.6.9",
+    "dotenv": "",
+    "express": "~4.16.1",
+    "express-session": "",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mongoose": "",
+    "morgan": "~1.9.1",
+    "passport": "",
+    "passport-local": "",
+    "run": "^1.4.0",
+    "validator": "",
+    "jsonwebtoken": ""
+  }
+}
