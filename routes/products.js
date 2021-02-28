@@ -9,7 +9,7 @@ router.route('/').get((req, res) => {
     const queryObject = url.parse(req.url,true).query;
     console.log(queryObject.productname);
     console.log(queryObject.suburb);
-    res.send(queryProductStock(inventoryDataset,queryObject.productname,queryObject.suburb));
+    res.send({"available": queryProductStock(inventoryDataset,queryObject.productname,queryObject.suburb)});
     res.end();
 });
 
@@ -47,10 +47,12 @@ let queryProductStock = function(inventoryDataset, prodname, suburb) {
     var subfound = false;
 //Step1: identify unique courses. Append all student names against the subject_code
     for(i of fileAsJson){
-        if (i.productname === prodname && i.productdetails.instock){
+        if (i.productname === prodname){            
             found = true;
             for (p of i.productdetails.storesinventory){
+                console.log(p);
                 if(p.suburb === suburb){
+                    console.log("found product and suburb!!");
                     subfound = true;
                     return p.countavailable;
                 }

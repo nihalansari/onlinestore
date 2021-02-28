@@ -12,6 +12,7 @@
     "$oid": "5a54ee9dc5592eb22a4d1cc8"
   },
   "productid": "18362887",
+  "productname": "coke",
   "productdetails": {
     "description": "Kellogs Corn Flakes",
     "otherdesc": "Breakfast Cereal",
@@ -34,7 +35,7 @@
       {
         "storeid": "syd0003",
         "suburb": "Manly",
-        "countavailable": 5
+        "countavailable": 0
       },
       {
         "storeid": "syd0004",

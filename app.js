@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const classDetailsRouter = require('./routes/classdetails');
+const productsRouter = require('./routes/products');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -37,13 +37,15 @@ app.use(cors());
 app.post('/login', auth.authenticate, auth.login)
 app.use('/',indexRouter);
 app.use('/users', auth.ensureAdmin, usersRouter);
-app.use('/classdetails', auth.ensureAdmin,classDetailsRouter);
+//app.use('/classdetails', auth.ensureAdmin,classDetailsRouter);
+app.use('/products',productsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     next(createError(404));
 });
 
+/*
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true }
 );
@@ -51,7 +53,7 @@ const connection = mongoose.connection;
 connection.once('open', () => {
     console.log("MongoDB database connection established successfully");
 })
-
+*/
 // error handler
 app.use(function(err, req, res, next) {
     // set locals, only providing error in development
